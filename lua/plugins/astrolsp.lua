@@ -22,7 +22,10 @@ return {
       format_on_save = {
         enabled = true, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
-          -- "go",
+          "python",
+          "lua",
+          "rust",
+          "json",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
@@ -54,7 +57,40 @@ return {
       -- the key is the server that is being setup with `lspconfig`
       -- rust_analyzer = false, -- setting a handler to false will disable the set up of that language server
       -- pyright = function(_, opts) require("lspconfig").pyright.setup(opts) end -- or a custom handler function can be passed
+      ruff = function(_, opts)
+        opts.init_options = {
+          settings = {
+            logLevel = "debug",
+          },
+        }
+        require("lspconfig").ruff.setup(opts)
+      end,
+
+      pyright = function(_, opts)
+        opts.settings = {
+          pyright = {
+            disableOrganizeImports = true,
+          },
+          python = {
+            analysis = {
+              ignore = { "*" },
+            },
+          },
+        }
+        require("lspconfig").pyright.setup(opts)
+      end,
     },
+    -- Disable hover capability for Ruff in favor of Pyright
+    vim.api.nvim_create_autocmd("LspAttach", {
+      group = vim.api.nvim_create_augroup("lsp_attach_disable_ruff_hover", { clear = true }),
+      callback = function(args)
+        local client = vim.lsp.get_client_by_id(args.data.client_id)
+        if client == nil then return end
+        if client.name == "ruff" then client.server_capabilities.hoverProvider = false end
+      end,
+      desc = "LSP: Disable hover capability from Ruff",
+    }),
+
     -- Configure buffer local auto commands to add when attaching a language server
     autocmds = {
       -- first key is the `augroup` to add the auto commands to (:h augroup)

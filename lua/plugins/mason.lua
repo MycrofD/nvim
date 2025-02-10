@@ -13,7 +13,9 @@ return {
       ensure_installed = {
         -- install language servers
         "lua-language-server",
-
+        "rust-analyzer",
+        "ruff",
+        "pyright",
         -- install formatters
         "stylua",
 
