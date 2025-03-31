@@ -16,5 +16,8 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.java" }, -- add Java language support
   { import = "astrocommunity.lsp.nvim-java" }, -- opt-in to nvim-java for LSP
+  { import = "astrocommunity.completion.copilot-lua-cmp" }, -- copilot-lua-cmp
+  { import = "astrocommunity.editing-support.copilotchat-nvim" }, -- copilotchat-nvim
+  { import = "astrocommunity.completion.cmp-emoji" }, -- emoji completion
   -- import/override with your plugins folder
 }
