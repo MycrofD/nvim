@@ -85,4 +85,32 @@ return {
       )
     end,
   },
+  -- scroll
+  {
+    "karb94/neoscroll.nvim",
+    opts = {},
+  },
+  -- git-blame
+  {
+    "f-person/git-blame.nvim",
+    event = "BufRead",
+    config = function()
+      vim.cmd "highlight default link gitblame SpecialComment"
+      vim.g.gitblame_enabled = 0
+    end,
+  },
+  -- install with yarn or npm
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && yarn install",
+    init = function() vim.g.mkdp_filetypes = { "markdown" } end,
+    ft = { "markdown" },
+  },
+  -- -- image.nvim
+  -- {
+  --   "3rd/image.nvim",
+  --   build = false, -- so that it doesn't build the rock https://github.com/3rd/image.nvim/issues/91#issuecomment-2453430239
+  --   opts = {},
+  -- },
 }
