@@ -19,5 +19,7 @@ return {
   { import = "astrocommunity.completion.copilot-lua-cmp" }, -- copilot-lua-cmp
   { import = "astrocommunity.editing-support.copilotchat-nvim" }, -- copilotchat-nvim
   { import = "astrocommunity.completion.cmp-emoji" }, -- emoji completion
+  { import = "astrocommunity.colorscheme.tokyonight-nvim" }, -- tokyonight colorscheme
+  { import = "astrocommunity.colorscheme.catppuccin" }, -- catppuccin colorscheme
   -- import/override with your plugins folder
 }
