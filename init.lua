@@ -17,12 +17,3 @@ end
 
 require "lazy_setup"
 require "polish"
-
--- Copilot Chat
-require("CopilotChat").setup {}
--- cmp emoji
-require("cmp").setup {
-  sources = {
-    { name = "emoji" },
-  },
-}
