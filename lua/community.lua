@@ -30,6 +30,9 @@ return {
   { import = "astrocommunity.fuzzy-finder.snacks-picker" }, -- folke/snacks-picker
   { import = "astrocommunity.utility.noice-nvim" }, -- noice.nvim
   { import = "astrocommunity.color.twilight-nvim" }, -- twilight.nvim (works well with zen-mode-nvim), that dims inactive portions of the code you're editing
-  { import = "astrocommunity.workflow.precognition-nvim" }, -- precognition.nvim assists with discovering motions (Both vertical and horizontal) to navigate your current buffer
+  -- workflow
+  { import = "astrocommunity.workflow.bad-practices-nvim" },
+  { import = "astrocommunity.workflow.hardtime-nvim" },
+  { import = "astrocommunity.workflow.precognition-nvim" },
   -- import/override with your plugins folder
 }
