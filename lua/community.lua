@@ -8,17 +8,6 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.completion.avante-nvim" },
-  { import = "astrocommunity.pack.rainbow-delimiter-indent-blankline" },
-  { import = "astrocommunity.pack.full-dadbod" },
-  { import = "astrocommunity.pack.bash" },
-  { import = "astrocommunity.pack.yaml" },
-  { import = "astrocommunity.pack.docker" },
-  { import = "astrocommunity.pack.fish" },
-  { import = "astrocommunity.pack.python-ruff" },
-  { import = "astrocommunity.pack.rust" },
-  { import = "astrocommunity.pack.sql" },
-  { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.java" }, -- add Java language support
   -- { import = "astrocommunity.lsp.nvim-java" }, -- opt-in to nvim-java for LSP
   { import = "astrocommunity.completion.cmp-emoji" }, -- emoji completion
   { import = "astrocommunity.completion.copilot-lua-cmp" }, -- copilot-lua-cmp
@@ -38,6 +27,7 @@ return {
   { import = "astrocommunity.colorscheme.tokyonight-nvim" }, -- tokyonight colorscheme
   { import = "astrocommunity.colorscheme.catppuccin" }, -- catppuccin colorscheme
   -- { import = "astrocommunity.recipes.cache-colorscheme" },
+  { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" }, -- markdown-preview-nvim
   { import = "astrocommunity.git.git-blame-nvim" }, -- git-blame-nvim
   { import = "astrocommunity.scrolling.neoscroll-nvim" }, -- neoscrooll-nvim
@@ -56,6 +46,19 @@ return {
   -- 24 note taking
   -- { import = "astrocommunity.note-taking.neorg" },
   { import = "astrocommunity.note-taking.global-note-nvim" },
+  -- 25 pack
+  { import = "astrocommunity.pack.terraform" },
+  { import = "astrocommunity.pack.rainbow-delimiter-indent-blankline" },
+  { import = "astrocommunity.pack.full-dadbod" },
+  { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.pack.yaml" },
+  { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.pack.fish" },
+  { import = "astrocommunity.pack.python-ruff" },
+  { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.sql" },
+  { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.java" }, -- add Java language support
   -- 33 search
   { import = "astrocommunity.search.nvim-spectre" }, -- find the enemy and replace them with dark power.
   -- 36 split-and-window
