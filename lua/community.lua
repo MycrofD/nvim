@@ -59,6 +59,8 @@ return {
   { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.java" }, -- add Java language support
+  { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.pack.fish" },
   -- 33 search
   { import = "astrocommunity.search.nvim-spectre" }, -- find the enemy and replace them with dark power.
   -- 36 split-and-window
