@@ -10,6 +10,7 @@ return {
   { import = "astrocommunity.completion.avante-nvim" },
   -- { import = "astrocommunity.lsp.nvim-java" }, -- opt-in to nvim-java for LSP
   { import = "astrocommunity.completion.cmp-emoji" }, -- emoji completion
+  { import = "astrocommunity.completion.blink-cmp" },
   { import = "astrocommunity.completion.copilot-lua-cmp" }, -- copilot-lua-cmp
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.editing-support.copilotchat-nvim" }, -- copilotchat-nvim
@@ -28,7 +29,6 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" }, -- catppuccin colorscheme
   -- { import = "astrocommunity.recipes.cache-colorscheme" },
   { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" },
-  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" }, -- markdown-preview-nvim
   { import = "astrocommunity.git.git-blame-nvim" }, -- git-blame-nvim
   { import = "astrocommunity.scrolling.neoscroll-nvim" }, -- neoscrooll-nvim
   { import = "astrocommunity.fuzzy-finder.snacks-picker" }, -- folke/snacks-picker
@@ -42,7 +42,9 @@ return {
   { import = "astrocommunity.git.gitgraph-nvim" },
   { import = "astrocommunity.git.nvim-tinygit" },
   { import = "astrocommunity.git.blame-nvim" },
-  { import = "astrocommunity.git.fugit2-nvim" },
+  -- { import = "astrocommunity.git.fugit2-nvim" },
+  -- 20 markdown-and-latex
+  { import = "astrocommunity.markdown-and-latex.peek-nvim" },
   -- 24 note taking
   -- { import = "astrocommunity.note-taking.neorg" },
   { import = "astrocommunity.note-taking.global-note-nvim" },
