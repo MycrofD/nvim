@@ -36,7 +36,11 @@ return {
   { import = "astrocommunity.color.twilight-nvim" }, -- twilight.nvim (works well with zen-mode-nvim), that dims inactive portions of the code you're editing
   -- 11 editing-support
   { import = "astrocommunity.editing-support.codecompanion-nvim" },
+  { import = "astrocommunity.editing-support.mcphub-nvim" },
   -- { import = "astrocommunity.editing-support.rustowl" },
+  -- 13 fuzzy-finder
+  { import = "astrocommunity.fuzzy-finder.fzf-lua" },
+  -- { import = "astrocommunity.fuzzy-finder.telescope-nvim" },
   -- 15 git
   { import = "astrocommunity.git.neogit" },
   { import = "astrocommunity.git.diffview-nvim" },
@@ -46,6 +50,8 @@ return {
   -- { import = "astrocommunity.git.fugit2-nvim" },
   -- 20 markdown-and-latex
   { import = "astrocommunity.markdown-and-latex.peek-nvim" },
+  -- 21 media
+  -- { import = "astrocommunity.media.image-nvim" }, -- used in snacks.nvim
   -- 24 note taking
   -- { import = "astrocommunity.note-taking.neorg" },
   { import = "astrocommunity.note-taking.global-note-nvim" },
@@ -64,6 +70,8 @@ return {
   { import = "astrocommunity.pack.java" }, -- add Java language support
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.fish" },
+  -- 29 recipes
+  { import = "astrocommunity.recipes.neovide" },
   -- 33 search
   { import = "astrocommunity.search.nvim-spectre" }, -- find the enemy and replace them with dark power.
   -- 36 split-and-window
