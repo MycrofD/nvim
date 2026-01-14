@@ -38,6 +38,8 @@ return {
   { import = "astrocommunity.editing-support.codecompanion-nvim" },
   { import = "astrocommunity.editing-support.mcphub-nvim" },
   -- { import = "astrocommunity.editing-support.rustowl" },
+  -- 12 file-explorer
+  { import = "astrocommunity.file-explorer.yazi-nvim" },
   -- 13 fuzzy-finder
   { import = "astrocommunity.fuzzy-finder.fzf-lua" },
   -- { import = "astrocommunity.fuzzy-finder.telescope-nvim" },
