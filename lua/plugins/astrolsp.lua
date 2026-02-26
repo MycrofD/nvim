@@ -26,7 +26,6 @@ return {
           "lua",
           "rust",
           "json",
-          "java",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
