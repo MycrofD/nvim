@@ -7,13 +7,15 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
-  { import = "astrocommunity.completion.avante-nvim" },
-  -- { import = "astrocommunity.lsp.nvim-java" }, -- opt-in to nvim-java for LSP
+  -- { import = "astrocommunity.completion.avante-nvim" },
+  -- 1. ai
+  { import = "astrocommunity.ai.avante-nvim" },
   { import = "astrocommunity.completion.cmp-emoji" }, -- emoji completion
   { import = "astrocommunity.completion.blink-cmp" },
   { import = "astrocommunity.completion.copilot-lua-cmp" }, -- copilot-lua-cmp
   { import = "astrocommunity.diagnostics.trouble-nvim" },
-  { import = "astrocommunity.editing-support.copilotchat-nvim" }, -- copilotchat-nvim
+  { import = "astrocommunity.ai.copilotchat-nvim" },
+  { import = "astrocommunity.ai.codecompanion-nvim" },
   { import = "astrocommunity.editing-support.zen-mode-nvim" }, --zen-mode-nvim, distraction-free coding for Neovim
   -- 5. colorschemes
   { import = "astrocommunity.colorscheme.gruvbox-nvim" }, -- gruvbox colorscheme
@@ -35,7 +37,6 @@ return {
   { import = "astrocommunity.utility.noice-nvim" }, -- noice.nvim
   { import = "astrocommunity.color.twilight-nvim" }, -- twilight.nvim (works well with zen-mode-nvim), that dims inactive portions of the code you're editing
   -- 11 editing-support
-  { import = "astrocommunity.editing-support.codecompanion-nvim" },
   { import = "astrocommunity.editing-support.mcphub-nvim" },
   -- { import = "astrocommunity.editing-support.rustowl" },
   -- 12 file-explorer
@@ -65,7 +66,9 @@ return {
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.fish" },
-  { import = "astrocommunity.pack.python-ruff" },
+  { import = "astrocommunity.pack.python.base" },
+  { import = "astrocommunity.pack.python.basedpyright" },
+  { import = "astrocommunity.pack.python.ruff" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.pack.lua" },
