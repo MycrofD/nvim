@@ -1,5 +1,3 @@
--- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- AstroLSP allows you to customize the features in AstroNvim's LSP configuration engine
 -- Configuration documentation can be found with `:h astrolsp`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
@@ -58,28 +56,47 @@ return {
       -- rust_analyzer = false, -- setting a handler to false will disable the set up of that language server
       -- pyright = function(_, opts) require("lspconfig").pyright.setup(opts) end -- or a custom handler function can be passed
       -- pyright = function(_, opts) require("lspconfig").pyright.setup(opts) end -- or a custom handler function can be passed
-      ruff = function(_, opts)
-        opts.init_options = {
-          settings = {
-            logLevel = "debug",
-          },
-        }
-        require("lspconfig").ruff.setup(opts)
-      end,
+      -- ruff = function(_, opts)
+      --   opts.init_options = {
+      --     settings = {
+      --       logLevel = "debug",
+      --     },
+      --   }
+      --   require("lspconfig").ruff.setup(opts)
+      -- end,
 
-      pyright = function(_, opts)
-        opts.settings = {
-          pyright = {
-            disableOrganizeImports = true,
-          },
-          python = {
-            analysis = {
-              ignore = { "*" },
-            },
-          },
-        }
-        require("lspconfig").pyright.setup(opts)
-      end,
+      -- pyright = function(_, opts)
+      --   opts.settings = {
+      --     pyright = {
+      --       disableOrganizeImports = true,
+      --     },
+      --     python = {
+      --       analysis = {
+      --         ignore = { "*" },
+      --       },
+      --     },
+      --   }
+      --   require("lspconfig").pyright.setup(opts)
+      -- end,
+
+      -- rust_analyzer = function(_, opts)
+      --   opts.settings = vim.tbl_deep_extend("force", opts.settings or {}, {
+      --     ["rust-analyzer"] = {
+      --       procMacro = {
+      --         ignored = {
+      --           leptos_macro = {
+      --             -- "component", -- uncomment if you want to ignore "component" too
+      --             "server",
+      --           },
+      --         },
+      --       },
+      --       cargo = {
+      --         features = "all",
+      --       },
+      --     },
+      --   })
+      --   require("lspconfig").rust_analyzer.setup(opts)
+      -- end,
     },
     -- Disable hover capability for Ruff in favor of Pyright
     vim.api.nvim_create_autocmd("LspAttach", {

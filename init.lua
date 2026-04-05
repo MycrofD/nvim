@@ -23,5 +23,27 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+-- lsp
+vim.lsp.config("rust_analyzer", {
+  -- Other Configs ...
+  settings = {
+    ["rust-analyzer"] = {
+      -- Other Settings ...
+      cargo = {
+        features = "all", -- Enable all features
+      },
+      procMacro = {
+        ignored = {
+          leptos_macro = {
+            -- optional: --
+            -- "component",
+            "server",
+          },
+        },
+      },
+    },
+  },
+})
+
 require "lazy_setup"
 require "polish"
