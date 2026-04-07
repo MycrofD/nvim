@@ -70,7 +70,7 @@ return {
   { import = "astrocommunity.pack.python.basedpyright" },
   { import = "astrocommunity.pack.python.ruff" },
   { import = "astrocommunity.pack.rust" },
-  { import = "astrocommunity.pack.sql" },
+  -- { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.java" }, -- add Java language support
   { import = "astrocommunity.pack.bash" },
