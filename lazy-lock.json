@@ -18,6 +18,7 @@
   "catppuccin": { "branch": "main", "commit": "426dbebe06b5c69fd846ceb17b42e12f890aedf1" },
   "cmp-dap": { "branch": "master", "commit": "ea92773e84c0ad3288c3bc5e452ac91559669087" },
   "cmp-emoji": { "branch": "main", "commit": "e8398e2adf512a03bb4e1728ca017ffeac670a9f" },
+  "codecompanion-copilot-enterprise.nvim": { "branch": "main", "commit": "2e5edc4fd32775dfff578c283624ed97334a9372" },
   "codecompanion-history.nvim": { "branch": "main", "commit": "bc1b4fe06eaaf0aa2399be742e843c22f7f1652a" },
   "codecompanion.nvim": { "branch": "main", "commit": "680c445eb357c72129d175ea5d481aa9e92ae6a5" },
   "copilot.lua": { "branch": "master", "commit": "ad7e729e9a6348f7da482be0271d452dbc4c8e2c" },
