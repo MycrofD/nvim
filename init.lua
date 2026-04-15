@@ -45,8 +45,5 @@ vim.lsp.config("rust_analyzer", {
   },
 })
 
-require("copilot").setup {
-  auth_provider_url = "https://eneco-bv.ghe.com", -- Replace with your GHE URL
-}
 require "lazy_setup"
 require "polish"

@@ -7,7 +7,6 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
-  -- { import = "astrocommunity.completion.avante-nvim" },
   -- 1. ai
   { import = "astrocommunity.ai.avante-nvim" },
   { import = "astrocommunity.completion.cmp-emoji" }, -- emoji completion
