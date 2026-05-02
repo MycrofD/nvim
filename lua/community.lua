@@ -14,6 +14,7 @@ return {
   { import = "astrocommunity.completion.copilot-lua-cmp" }, -- copilot-lua-cmp
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.ai.copilotchat-nvim" },
+  -- { import = "astrocommunity.completion.copilot-vim" },
   { import = "astrocommunity.ai.codecompanion-nvim" },
   { import = "astrocommunity.editing-support.zen-mode-nvim" }, --zen-mode-nvim, distraction-free coding for Neovim
   -- 5. colorschemes
