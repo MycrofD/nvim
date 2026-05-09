@@ -11,7 +11,8 @@ return {
   { import = "astrocommunity.ai.avante-nvim" },
   { import = "astrocommunity.completion.cmp-emoji" }, -- emoji completion
   { import = "astrocommunity.completion.blink-cmp" },
-  { import = "astrocommunity.completion.copilot-lua-cmp" }, -- copilot-lua-cmp
+  -- { import = "astrocommunity.completion.copilot-lua-cmp" }, -- copilot-lua-cmp
+  { import = "astrocommunity.completion.copilot-vim-cmp" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.ai.copilotchat-nvim" },
   -- { import = "astrocommunity.completion.copilot-vim" },
