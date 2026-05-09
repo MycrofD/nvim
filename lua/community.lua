@@ -53,6 +53,7 @@ return {
   -- { import = "astrocommunity.git.fugit2-nvim" },
   -- 20 markdown-and-latex
   { import = "astrocommunity.markdown-and-latex.peek-nvim" },
+  { import = "astrocommunity.markdown-and-latex.markview-nvim" },
   -- 21 media
   -- { import = "astrocommunity.media.image-nvim" }, -- used in snacks.nvim
   -- 24 note taking
