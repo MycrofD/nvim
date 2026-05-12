@@ -54,4 +54,4 @@ require "polish"
 -- vim.g.copilot_auth_provider_url = 'https://<domain>'
 -- vim.g.copilot_enterprise_url = "https://eneco-bv.ghe.com"
 -- vim.g.auth_provider_url = "https://eneco-bv.ghe.com"
-vim.g.copilot_auth_provider_url = "https://eneco-bv.ghe.com"
+vim.g.copilot_enterprise_uri = "https://eneco-bv.ghe.com"
