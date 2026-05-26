@@ -45,13 +45,9 @@ vim.lsp.config("rust_analyzer", {
   },
 })
 
--- require("copilot").setup {
---   auth_provider_url = "https://eneco-bv.ghe.com",
--- }
+-- Set GHE variables BEFORE plugins load so copilot.vim picks them up
+vim.g.copilot_auth_provider_url = "https://eneco-bv.ghe.com"
+vim.g.copilot_enterprise_uri = "https://eneco-bv.ghe.com"
+
 require "lazy_setup"
 require "polish"
-
--- vim.g.copilot_auth_provider_url = 'https://<domain>'
--- vim.g.copilot_enterprise_url = "https://eneco-bv.ghe.com"
--- vim.g.auth_provider_url = "https://eneco-bv.ghe.com"
-vim.g.copilot_enterprise_uri = "https://eneco-bv.ghe.com"
