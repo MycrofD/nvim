@@ -1,5 +1,3 @@
--- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- AstroCommunity: import any community modules here
 -- We import this file in `lazy_setup.lua` before the `plugins/` folder.
 -- This guarantees that the specs are processed before any user plugins.
@@ -9,15 +7,14 @@ return {
   "AstroNvim/astrocommunity",
   -- 1. ai
   { import = "astrocommunity.ai.avante-nvim" },
+  { import = "astrocommunity.ai.copilotchat-nvim" },
+  -- { import = "astrocommunity.completion.copilot-vim" },
+  { import = "astrocommunity.ai.codecompanion-nvim" },
   { import = "astrocommunity.completion.cmp-emoji" }, -- emoji completion
   { import = "astrocommunity.completion.blink-cmp" },
   { import = "astrocommunity.completion.copilot-lua-cmp" }, -- copilot-lua-cmp
   -- { import = "astrocommunity.completion.copilot-vim-cmp" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
-  { import = "astrocommunity.ai.copilotchat-nvim" },
-  -- { import = "astrocommunity.completion.copilot-vim" },
-  { import = "astrocommunity.ai.codecompanion-nvim" },
-  { import = "astrocommunity.editing-support.zen-mode-nvim" }, --zen-mode-nvim, distraction-free coding for Neovim
   -- 5. colorschemes
   { import = "astrocommunity.colorscheme.gruvbox-nvim" }, -- gruvbox colorscheme
   { import = "astrocommunity.colorscheme.nightfox-nvim" }, -- nightfox colorscheme
@@ -40,6 +37,7 @@ return {
   -- 11 editing-support
   { import = "astrocommunity.editing-support.mcphub-nvim" },
   -- { import = "astrocommunity.editing-support.rustowl" },
+  { import = "astrocommunity.editing-support.zen-mode-nvim" }, --zen-mode-nvim, distraction-free coding for Neovim
   -- 12 file-explorer
   { import = "astrocommunity.file-explorer.yazi-nvim" },
   -- 13 fuzzy-finder
