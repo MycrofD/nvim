@@ -48,6 +48,7 @@ vim.lsp.config("rust_analyzer", {
 -- Set GHE variables BEFORE plugins load so copilot.vim picks them up
 vim.g.copilot_auth_provider_url = "https://eneco-bv.ghe.com"
 vim.g.copilot_enterprise_uri = "https://eneco-bv.ghe.com"
+-- Set Fish as the default shell
+vim.opt.shell = "/opt/homebrew/bin/fish"
 
 require "lazy_setup"
-require "polish"
