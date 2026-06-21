@@ -6,7 +6,7 @@
 return {
   "AstroNvim/astrocommunity",
   -- 1. ai
-  { import = "astrocommunity.ai.avante-nvim" },
+  -- { import = "astrocommunity.ai.avante-nvim" },
   { import = "astrocommunity.ai.copilotchat-nvim" },
   -- { import = "astrocommunity.completion.copilot-vim" },
   -- { import = "astrocommunity.ai.codecompanion-nvim" },
