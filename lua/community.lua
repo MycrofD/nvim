@@ -35,7 +35,7 @@ return {
   { import = "astrocommunity.utility.noice-nvim" }, -- noice.nvim
   { import = "astrocommunity.color.twilight-nvim" }, -- twilight.nvim (works well with zen-mode-nvim), that dims inactive portions of the code you're editing
   -- 11 editing-support
-  { import = "astrocommunity.editing-support.mcphub-nvim" },
+  -- { import = "astrocommunity.editing-support.mcphub-nvim" },
   -- { import = "astrocommunity.editing-support.rustowl" },
   { import = "astrocommunity.editing-support.zen-mode-nvim" }, --zen-mode-nvim, distraction-free coding for Neovim
   -- 12 file-explorer
