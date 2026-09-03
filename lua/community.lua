@@ -30,7 +30,7 @@ return {
   -- 15 git
   -- { import = "astrocommunity.git.neogit" },
   { import = "astrocommunity.git.diffview-nvim" },
-  -- { import = "astrocommunity.git.nvim-tinygit" },
+  { import = "astrocommunity.git.nvim-tinygit" },
   { import = "astrocommunity.git.blame-nvim" },
   -- { import = "astrocommunity.git.fugit2-nvim" },
   -- 20 markdown-and-latex
